@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form{
+  width: 30%;
+  height: 170px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+input{
+  width: 250px;
+  height: 25px;
+  border: 0px;
+  border-bottom: 3px solid black;
+  outline: none;
+}
+input:focus{
+  border-bottom-color: coral;
+}
+input:focus::-webkit-input-placeholder{
+  width: 10px;
+  transition: 2s;
+  padding-left: 255px;
+  transform: rotateX(-360deg);
+}
+button{
+  background-color: black;
   color: white;
+  outline: none;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+  height: 35px;
+  background-color: coral;
+  margin-top: -5px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px 2px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete{
+  background-image: url(delete.png);
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
 }
